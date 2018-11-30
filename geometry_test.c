@@ -1,18 +1,5 @@
-/*
- * geometry_test.c
- * Andy Sayler
- * CSCI 3308
- * Summer 2014
- *
- * This file containsunit tests for geometry.c
- *
- * Requires http://check.sourceforge.net/
- *
- */
-
 #include <stdlib.h>
 #include <check.h>
-
 #include "geometry.h"
 
 /* coord_2d_eq Test */
@@ -50,7 +37,6 @@ START_TEST(test_2d_eq)
     b.x = 7.77;
     b.y = 8.88;
     ck_assert(!coord_2d_eq(&a, &b));
-
 }
 END_TEST
 
