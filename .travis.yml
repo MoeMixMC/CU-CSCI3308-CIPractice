@@ -3,4 +3,5 @@ compiler:
   - clang
   - gcc
 script: make && make test
-install: check
+before_install:
+  - sudo apt-get install check
